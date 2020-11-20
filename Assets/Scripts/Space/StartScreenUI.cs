@@ -19,6 +19,18 @@ public class StartScreenUI : MonoBehaviour
 
     public void OnClickStart()
     {
-        SceneManager.LoadScene("SampleScene");
+        Debug.Log("StartGame");
+        SceneManager.LoadScene("Level0");
+    }
+
+    public void OnClickInstructions()
+    {
+        SceneManager.LoadScene("InstructionsWL");
+        Debug.Log("Instructions");
+    }
+
+    public void OnClickBack()
+    {
+        SceneManager.LoadScene("StartWL");
     }
 }
